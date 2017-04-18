@@ -1,17 +1,32 @@
-function Bike() {
-  // your code here
+function Bike(name, price) {
+  this.name = name,
+  this.price = price,
+  this.tires = [new Tire(),new Tire()],
+  this.frame  = new Frame(),
+  this.rings = [3,7],
+  this.brakes = {
+    front: true,
+    back: true
+  }
 }
 
-function Frame() {
-  // your code here
+
+function Frame(color="black",size=55,style = "street") {
+  this.color = color,
+  this.size = size,
+  this.style = style
+
+
 }
 
-function Tire() {
+function Tire(diameter = 22,type ="street") {
   // your code here
+  this.diameter = diameter,
+  this.type = type
 }
 
 module.exports = {
   Bike: Bike,
   Frame: Frame,
   Tire: Tire
-}
+};
