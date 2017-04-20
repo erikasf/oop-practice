@@ -5,98 +5,98 @@ const Bike   = stage3.Bike
 const Tire   = stage3.Tire
 
 describe('Tire', () => {
-  test('has an #isFlat() method', () => {
+    test('has an #isFlat() method', () => {
     const myTire = new Tire()
     expect(typeof myTire.isFlat).toBe('function')
-  })
+})
 
-  test('are not flat by default', () => {
+test('are not flat by default', () => {
     const myTire = new Tire()
     expect(myTire.isFlat()).toBe(false)
-  })
+})
 
-  test('can be punctured with the #puncture() method', () => {
+test('can be punctured with the #puncture() method', () => {
     const myTire = new Tire()
     expect(typeof myTire.puncture).toBe('function')
-  })
+})
 
-  test('when punctured they become flat', () => {
+test('when punctured they become flat', () => {
     const myTire = new Tire()
 
     expect(myTire.isFlat()).toBe(false)
-    myTire.puncture()
-    expect(myTire.isFlat()).toBe(true)
-  })
+myTire.puncture()
+expect(myTire.isFlat()).toBe(true)
+})
 
-  test('can be repaired with the #repair() method', () => {
+test('can be repaired with the #repair() method', () => {
     const myTire = new Tire()
     expect(typeof myTire.repair).toBe('function')
-  })
+})
 
-  test('when repaired they are no longer flat', () => {
+test('when repaired they are no longer flat', () => {
     const myTire = new Tire()
 
     myTire.puncture()
-    expect(myTire.isFlat()).toBe(true)
-    myTire.repair()
-    expect(myTire.isFlat()).toBe(false)
-  })
+expect(myTire.isFlat()).toBe(true)
+myTire.repair()
+expect(myTire.isFlat()).toBe(false)
+})
 })
 
 describe('Bike', () => {
-  test('has an #isMoving() method', () => {
+    test('has an #isMoving() method', () => {
     const myBike = new Bike()
     expect(typeof myBike.isMoving).toBe('function')
-  })
+})
 
-  test('are not moving by default', () => {
+test('are not moving by default', () => {
     const myBike = new Bike()
     expect(myBike.isMoving()).toBe(false)
-  })
+})
 
-  test('has a #pedal() method', () => {
+test('has a #pedal() method', () => {
     const myBike = new Bike()
     expect(typeof myBike.pedal).toBe('function')
-  })
+})
 
-  test('when pedaling makes the bike move', () => {
+test('when pedaling makes the bike move', () => {
     const myBike = new Bike()
 
     expect(myBike.isMoving()).toBe(false)
-    myBike.pedal()
-    expect(myBike.isMoving()).toBe(true)
-  })
+myBike.pedal()
+expect(myBike.isMoving()).toBe(true)
+})
 
-  test('when pedaling will throw an error if there is a flat tire', () => {
+test('when pedaling will throw an error if there is a flat tire', () => {
     const myBike = new Bike()
 
     myBike.tires[0].puncture()
-    expect(() => { myBike.pedal() }).toThrowError("Can't pedal with a flat tire")
-  })
+expect(() => { myBike.pedal() }).toThrowError("Can't pedal with a flat tire")
+})
 
-  test('has a #brake() method', () => {
+test('has a #brake() method', () => {
     const myBike = new Bike()
     expect(typeof myBike.brake).toBe('function')
-  })
+})
 
-  test('when braking stops the bike', () => {
+test('when braking stops the bike', () => {
     const myBike = new Bike()
 
     myBike.pedal()
-    expect(myBike.isMoving()).toBe(true)
-    myBike.brake()
-    expect(myBike.isMoving()).toBe(false)
-  })
+expect(myBike.isMoving()).toBe(true)
+myBike.brake()
+expect(myBike.isMoving()).toBe(false)
+})
 
-  test('has a #gearSpeeds() method', () => {
+test('has a #gearSpeeds() method', () => {
     const myBike = new Bike()
     expect(typeof myBike.gearSpeeds).toBe('function')
-  })
+})
 
-  test('can tell the number of speeds with #gearSpeeds() (assuming the default rings of 3 in front and 7 in back)', () => {
+test('can tell the number of speeds with #gearSpeeds() (assuming the default rings of 3 in front and 7 in back)', () => {
     const myBike = new Bike()
     expect(myBike.gearSpeeds()).toBe(21)
-    myBike.rings = [2,5]
-    expect(myBike.gearSpeeds()).toBe(10)
-  })
+myBike.rings = [2,5]
+expect(myBike.gearSpeeds()).toBe(10)
+})
 })
