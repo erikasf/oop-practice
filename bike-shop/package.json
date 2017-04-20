@@ -1,6 +1,6 @@
 {
   "name": "bike-shop",
-  "description": "",
+  "description": "Model the inventory of a bike shop (bicycle types and parts) using object-oriented JavaScript.",
   "private": false,
   "version": "0.0.0",
   "engines": {
@@ -15,5 +15,12 @@
     "test:stage2": "jest test/stage2.test.js || true",
     "test:stage3": "jest test/stage3.test.js || true",
     "test:stage4": "jest test/stage4.test.js || true"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "author": "",
+  "license": "ISC"
 }
