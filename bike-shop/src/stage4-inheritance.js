@@ -40,8 +40,11 @@ class RoadTire extends Tire {
 
 class Bike {
   constructor(name, price) {
-    const DEFAULT_RINGS = [3, 7]
-    const DEFAULT_BRAKES = { front: true, back: true }
+    const defaultRings = [3, 7]
+    const defaultBrakes = { 
+        front: true, 
+        back: true 
+    }
 
     this.name = name
     this.price = price
