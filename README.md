@@ -127,40 +127,40 @@ These are the basic specs for OOP Practice, broken into 5 stages. If you complet
 
 To get started, each team member needs to fork the [oop-practice][] repo. Then, create a [gist](https://gist.github.com/) and add links to each fork to a file in the gist. This is your `artifact`.
 
-- [ ] Artifact is set to a gist with links to each of your teammate's forks.
-- [ ] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Objects" tutorial on JavaScript.info](http://javascript.info/object):
-  - [ ] [Hello, object](http://javascript.info/object#hello-object)
-  - [ ] [Multiply numeric properties by 2](http://javascript.info/object#multiply-numeric-properties-by-2)
-- [ ] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Object methods, 'this'" tutorial on JavaScript.info](http://javascript.info/object-methods):
-  - [ ] [Create a calculator](http://javascript.info/object-methods#create-a-calculator)
-  - [ ] [Chaining](http://javascript.info/object-methods#chaining)
-- [ ] All stage 1 tests in the `bike-shop` are passing with source code written in `bike-shop/src/stage1-literals.js`.
+- [ x] Artifact is set to a gist with links to each of your teammate's forks.
+- [ x] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Objects" tutorial on JavaScript.info](http://javascript.info/object):
+  - [ x] [Hello, object](http://javascript.info/object#hello-object)
+  - [ x] [Multiply numeric properties by 2](http://javascript.info/object#multiply-numeric-properties-by-2)
+- [ x] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Object methods, 'this'" tutorial on JavaScript.info](http://javascript.info/object-methods):
+  - [ x] [Create a calculator](http://javascript.info/object-methods#create-a-calculator)
+  - [x ] [Chaining](http://javascript.info/object-methods#chaining)
+- [x ] All stage 1 tests in the `bike-shop` are passing with source code written in `bike-shop/src/stage1-literals.js`.
 
 #### Stage 2
 
-- [ ] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Constructor, operator 'new'" tutorial on JavaScript.info](http://javascript.info/constructor-new):
-  - [ ] [Create new Calculator](http://javascript.info/constructor-new#create-new-calculator)
-  - [ ] [Create new Accumulator](http://javascript.info/constructor-new#create-new-accumulator)
-  - [ ] [Create an extendable calculator](http://javascript.info/constructor-new#create-an-extendable-calculator)
-- [ ] All stage 2 tests in the `bike-shop` are passing with source code written in `bike-shop/src/stage2-constructors.js`.
+- [ x] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Constructor, operator 'new'" tutorial on JavaScript.info](http://javascript.info/constructor-new):
+  - [ x] [Create new Calculator](http://javascript.info/constructor-new#create-new-calculator)
+  - [ x] [Create new Accumulator](http://javascript.info/constructor-new#create-new-accumulator)
+  - [ x] [Create an extendable calculator](http://javascript.info/constructor-new#create-an-extendable-calculator)
+- [x ] All stage 2 tests in the `bike-shop` are passing with source code written in `bike-shop/src/stage2-constructors.js`.
 
 #### Stage 3
 
-- [ ] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Prototypal inheritance" tutorial on JavaScript.info](http://javascript.info/prototype-inheritance):
-  - [ ] [Searching algorithm](http://javascript.info/prototype-inheritance#searching-algorithm)
-  - [ ] [Why two hamsters are full?](http://javascript.info/prototype-inheritance#why-two-hamsters-are-full)
-- [ ] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Class patterns" tutorial on JavaScript.info](http://javascript.info/class-patterns):
-  - [ ] [An error in the inheritance](http://javascript.info/class-patterns#an-error-in-the-inheritance)
-  - [ ] [Rewrite to prototypes](http://javascript.info/class-patterns#rewrite-to-prototypes)
-- [ ] All stage 3 tests in the `bike-shop` are passing with source code written in `bike-shop/src/stage3-methods.js`.
+- [ x] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Prototypal inheritance" tutorial on JavaScript.info](http://javascript.info/prototype-inheritance):
+  - [ x] [Searching algorithm](http://javascript.info/prototype-inheritance#searching-algorithm)
+  - [x ] [Why two hamsters are full?](http://javascript.info/prototype-inheritance#why-two-hamsters-are-full)
+- [ x] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Class patterns" tutorial on JavaScript.info](http://javascript.info/class-patterns):
+  - [ x]x [An error in the inheritance](http://javascript.info/class-patterns#an-error-in-the-inheritance)
+  - [ x] [Rewrite to prototypes](http://javascript.info/class-patterns#rewrite-to-prototypes)
+- [ x] All stage 3 tests in the `bike-shop` are passing with source code written in `bike-shop/src/stage3-methods.js`.
 
 #### Stage 4
 
-- [ ] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Classes" tutorial on JavaScript.info](http://javascript.info/class):
-  - [ ] [Rewrite to class](http://javascript.info/class#rewrite-to-class)
-- [ ] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Class inheritance, super" tutorial on JavaScript.info](http://javascript.info/class-inheritance):
-  - [ ] [Error creating an instance](http://javascript.info/class-inheritance#error-creating-an-instance)
-  - [ ] [Extended clock](http://javascript.info/class-inheritance#extended-clock)
+- [ x] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Classes" tutorial on JavaScript.info](http://javascript.info/class):
+  - [ x] [Rewrite to class](http://javascript.info/class#rewrite-to-class)
+- [ x] Solutions exist in the `jsinfo/` folder for the following exercises from the ["Class inheritance, super" tutorial on JavaScript.info](http://javascript.info/class-inheritance):
+  - [ x] [Error creating an instance](http://javascript.info/class-inheritance#error-creating-an-instance)
+  - [ x] [Extended clock](http://javascript.info/class-inheritance#extended-clock)
 - [ ] All stage 4 tests in the `bike-shop` are passing with source code written in `bike-shop/src/stage4-inheritance.js`.
 
 #### Stage 5
