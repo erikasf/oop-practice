@@ -47,6 +47,7 @@ class RoadTire extends Tire {
 }
 
 class Bike {
+
     constructor(name, price) {
         const defaultRings = [3, 7]
         const defaultBrakes = {front: true, back: true}
@@ -59,6 +60,7 @@ class Bike {
         this.brakes = defaultBrakes
         this.moving = false
     }
+
 
     gearSpeeds() {
         return this.rings[0] * this.rings[1]
@@ -130,9 +132,13 @@ class RacingBike extends Bike {
   }
 }
 
-    module.exports = {
-      Bike: Bike,
-      MountainBike: MountainBike,
-      BMXBike: BMXBike,
-      RacingBike: RacingBike
+
+
+
+module.exports = {
+  Bike: Bike,
+  MountainBike: MountainBike,
+  BMXBike: BMXBike,
+  RacingBike: RacingBike
 }
+
