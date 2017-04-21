@@ -167,14 +167,14 @@ To get started, each team member needs to fork the [oop-practice][] repo. Then, 
 
 Design a basic **object model** for a music player like Spotify or iTunes.
 
-- [ ] `Song` class is defined in `music-player/song.js`.
-  - [ ] Has properties and methods that you would expect a "song" object to have, at minimum: `.title`, `.length`, `.album`, `.artist`, `.track_no`, `.play()`, `.pause()`.
-- [ ] `Album` class is defined in `music-player/album.js`.
-  - [ ] Has properties and methods that you would expect an "album" object to have, at minimum: `.title`, `.songCount`, `.artist`.
-- [ ] `Artist` class is defined in `music-player/artist.js`.
-  - [ ] Has properties and methods that you would expect an "artist" object to have, at minimum: `.name`, `.bandMembers`, `.genre`.
-- [ ] `Playlist` class is defined in `music-player/playlist.js`.
-  - [ ] Has properties and methods that you would expect a "playlist" object to have, at minimum: `.name`, `.songs`, `.addSong(<Song>)`, `.removeSong(<Song>)`, `.play()`, `.pause()`.
+- [x ] `Song` class is defined in `music-player/song.js`.
+  - [ x] Has properties and methods that you would expect a "song" object to have, at minimum: `.title`, `.length`, `.album`, `.artist`, `.track_no`, `.play()`, `.pause()`.
+- [x ] `Album` class is defined in `music-player/album.js`.
+  - [ x] Has properties and methods that you would expect an "album" object to have, at minimum: `.title`, `.songCount`, `.artist`.
+- [ x] `Artist` class is defined in `music-player/artist.js`.
+  - [x ] Has properties and methods that you would expect an "artist" object to have, at minimum: `.name`, `.bandMembers`, `.genre`.
+- [ x] `Playlist` class is defined in `music-player/playlist.js`.
+  - [ x] Has properties and methods that you would expect a "playlist" object to have, at minimum: `.name`, `.songs`, `.addSong(<Song>)`, `.removeSong(<Song>)`, `.play()`, `.pause()`.
 
 ### Stretch
 
