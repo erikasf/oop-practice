@@ -1,14 +1,15 @@
 function Bike(name, price) {
-    const defaultRings = [3, 7]
+   const defaultRings = [3, 7]
     const defaultBrakes = { front: true, back: true }
     const defaultTires = false;
 
-    this.name = name
-    this.price = price
-    this.frame = new Frame()
-    this.tires = [new Tire(), new Tire()]
-    this.rings = defaultRings
-    this.brakes = defaultBrakes
+    this.name = name,
+    this.price = price,
+    this.frame = new Frame(),
+    this.tires = [new Tire(), new Tire()],
+    this.rings = defaultRings,
+    this.brakes = defaultBrakes,
+        this.moving = false
 
 }
 
@@ -17,51 +18,56 @@ Bike.prototype.gearSpeeds = function() {
 }
 
 Bike.prototype.pedal = function() {
+
     if (this.tires[0].isFlat()=== true || this.tires[1].isFlat()===true) {
-        throw Error("Can't pedal with a flat tire")
+        throw new Error("Can't pedal with a flat tire")
+
     }
 
     this.moving = true
 }
 
+
 Bike.prototype.brake = function() {
-    this._moving = false
-}
-
-Bike.prototype.isMoving = function() {
-    return this.moving
-}
-
-function Frame(color='black', size=55, style='street') {
-    this.color = color
-    this.size = size
-    this.style = style
-}
-
-function Tire(diameter=22, type='street') {
-    this.diameter = diameter
-    this.type = type
-    this.flat = false
-}
-
-Tire.prototype.isFlat = function() {
-    return this.flat
-}
-
-Tire.prototype.puncture = function() {
-    this.flat = true
-}
-
-Tire.prototype.repair = function() {
-    this.flat = false
-}
-
-module.exports = {
-    Bike: Bike,
-    Frame: Frame,
-    Tire: Tire
+   this.moving = false;
 
 }
+    Bike.prototype.isMoving = function () {
+        return this.moving;
+    }
+
+    function Frame(color='black', size=55, style='street') {
+        this.color = color
+        this.size = size
+        this.style = style
+    }
+
+    function Tire(diameter=22, type='street') {
+        this.diameter = diameter
+        this.type = type
+        this.flat = false
+    }
+
+    Tire.prototype.isFlat = function () {
+        return this.flat
+    }
+
+    Tire.prototype.puncture = function () {
+        this.flat = true
+    }
+
+    Tire.prototype.repair = function () {
+        this.flat = false
+    }
+
+
+    module.exports = {
+        Bike: Bike,
+        Frame: Frame,
+        Tire: Tire
+
+    }
+
 // class Bike {
 //     constructor(tire, frame, rings, brakes) {
 //
@@ -126,4 +132,4 @@ module.exports = {
 //   Bike: Bike,
 //   /* Frame: Frame,*/
 //    Tire:Tire
-// };
+
